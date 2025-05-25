@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BLOODWOOD // ACCESS REQUEST</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #eeeeee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #ff3c00;
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+    }
+    .tagline {
+      color: #aaa;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+    form {
+      background: #111;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    input, button {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    input[type="file"] {
+      background-color: #1c1c1c;
+      color: #ccc;
+    }
+    button {
+      margin-top: 1.5rem;
+      background-color: #ff3c00;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>YOU ARE NOT INVITED.</h1>
+  <p class="tagline">BLOODWOOD // Access Requires Verification</p>
+
+  <form name="accessForm" method="POST" action="bloodwood.html" enctype="multipart/form-data">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="idphoto">Upload a photo of yourself holding your ID</label>
+    <input type="file" id="idphoto" name="idphoto" accept="image/*" required />
+
+    <button type="submit">Request Access</button>
+  </form>
+
+  <div class="footer">
+    This system is under restricted access. All entries are reviewed.<br/>
+    BLOODWOOD // AEGIS Tactical Australia
+  </div>
+
+</body>
+</html>
