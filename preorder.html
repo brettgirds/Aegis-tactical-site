@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLOODWOOD Pre-Order Access</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PRE-ORDER ACCESS</h1>
+    <p>Register your interest to be notified when BLOODWOOD drops.</p>
+    <form action="https://formsubmit.co/brettgirds@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://aegistacticalaustralia.com.au/thankyou.html">
+
+      <input type="text" name="Name" placeholder="Your Name" required><br>
+      <input type="email" name="Email" placeholder="Your Email" required><br>
+
+      <label style="color:#eee; font-size:0.9em; display:block; margin-top:10px;">When would you be ready to buy?</label>
+      <select name="Buy Timeline" required>
+        <option value="" disabled selected>Choose one</option>
+        <option value="Within 6 months">Within 6 months</option>
+        <option value="6–12 months">6–12 months</option>
+        <option value="12+ months / Just watching">12+ months / Just watching</option>
+      </select><br><br>
+
+      <label style="color:#eee; font-size:0.9em; display:block; margin-top:10px;">Which best describes you?</label>
+      <select name="User Type" required>
+        <option value="" disabled selected>Choose one</option>
+        <option value="Landholder">Landholder</option>
+        <option value="Primary Producer">Primary Producer</option>
+        <option value="Feral Control Operator">Feral Control Operator</option>
+      </select><br><br>
+
+      <input type="submit" value="Register Interest">
+    </form>
+    <p class="footer">BLOODWOOD // AEGIS Tactical Australia</p>
+  </div>
+</body>
+</html>
